@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack with Betting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex-container">
+        <img src="dealericon.png">
+        <h2 style="background-color: red; color:white"> DEALER </h2>
+        <div class="break"></div>
+        <img class="cards" id="dealercard1" src="cardbg.jpg">
+        <img class="cards" id="dealercard2" src="cardbg.jpg">
+        <img class="cards hidden" id="dealercard3" src="cardbg.jpg">
+        <img class="cards hidden" id="dealercard4" src="cardbg.jpg">
+        <img class="cards hidden" id="dealercard5" src="cardbg.jpg">
+        <img class="cards hidden" id="dealercard6" src="cardbg.jpg">
+        <img class="cards hidden" id="dealercard7" src="cardbg.jpg">
+        <img class="cards hidden" id="dealercard8" src="cardbg.jpg">
+        <div class="break"></div>
+        <img class="cards" id="playercard1" src="cardbg.jpg">
+        <img class="cards" id="playercard2" src="cardbg.jpg">
+        <img class="cards hidden" id="playercard3" src="cardbg.jpg">
+        <img class="cards hidden" id="playercard4" src="cardbg.jpg">
+        <img class="cards hidden" id="playercard5" src="cardbg.jpg">
+        <img class="cards hidden" id="playercard6" src="cardbg.jpg">
+        <img class="cards hidden" id="playercard7" src="cardbg.jpg">
+        <img class="cards hidden" id="playercard8" src="cardbg.jpg">
+        <div class="break"></div>
+        <img src="player.png">
+        <h2 style="background-color: red; color:white"> PLAYER </h2>
+        <div class="break"></div>
+        <div id="betting" class="betting-section">
+            <label for="betAmount">Bet Amount:</label>
+            <input type="number" id="betAmount" class="bet-input" min="1" value="1">
+            <button class="buttons" id="placeBet">Place Bet</button>
+        </div>
+        <button class="buttons" id="newgame"> NEW GAME </button>
+        <button class="buttons" id="hit"> HIT </button>
+        <button class="buttons" id="stand"> STAND </button>
+        <button class="buttons" id="double"> DOUBLE </button>
+        <button class="buttons" id="split"> SPLIT </button>
+        <div class="break"></div>
+        <div id="scoreboard">
+            <p>Player Score: <span id="player-score">0</span></p>
+            <p>Dealer Score: <span id="dealer-score">0</span></p>
+            <p>Player Balance: $<span id="playerBalance">100</span></p>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="test.js"></script>
+</body>
+</html>
